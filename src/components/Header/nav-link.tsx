@@ -2,7 +2,7 @@ import { Link, LinkProps, useLocation } from 'react-router-dom'
 
 export type NavLinkProps = LinkProps
 
-const NavLink = (props: NavLinkProps) => {
+export const NavLink = (props: NavLinkProps) => {
   const { pathname } = useLocation()
   return (
     <Link
@@ -12,5 +12,3 @@ const NavLink = (props: NavLinkProps) => {
     />
   )
 }
-
-export default NavLink
